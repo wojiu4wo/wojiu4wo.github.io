@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>USRP以及FPGA初识 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="由于这两天正好在学习labview，然后看到了各种各样的USRP以及FPGA，一头雾水（虽然我不应该一头雾水）之下赶快来补了一下知识。当然，这篇并不是一篇专业的帖子，我仅仅只会学习到我认为足够用于我的实验的水平即可。也许随着实验的深入，要求的知识越多，我也会继续更新。Anyway，既然是初识，那么主要内容就是在一分钟内搞明白到底什么是USRP以及FPGA。 FPGAFPGA 全称叫做（Field">
+<meta property="og:type" content="article">
+<meta property="og:title" content="USRP以及FPGA初识">
+<meta property="og:url" content="http://yoursite.com/2018/01/08/USRP以及FPGA初识/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="由于这两天正好在学习labview，然后看到了各种各样的USRP以及FPGA，一头雾水（虽然我不应该一头雾水）之下赶快来补了一下知识。当然，这篇并不是一篇专业的帖子，我仅仅只会学习到我认为足够用于我的实验的水平即可。也许随着实验的深入，要求的知识越多，我也会继续更新。Anyway，既然是初识，那么主要内容就是在一分钟内搞明白到底什么是USRP以及FPGA。 FPGAFPGA 全称叫做（Field">
+<meta property="og:updated_time" content="2018-01-08T20:46:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="USRP以及FPGA初识">
+<meta name="twitter:description" content="由于这两天正好在学习labview，然后看到了各种各样的USRP以及FPGA，一头雾水（虽然我不应该一头雾水）之下赶快来补了一下知识。当然，这篇并不是一篇专业的帖子，我仅仅只会学习到我认为足够用于我的实验的水平即可。也许随着实验的深入，要求的知识越多，我也会继续更新。Anyway，既然是初识，那么主要内容就是在一分钟内搞明白到底什么是USRP以及FPGA。 FPGAFPGA 全称叫做（Field">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-USRP以及FPGA初识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/08/USRP以及FPGA初识/" class="article-date">
+  <time datetime="2018-01-08T20:09:48.000Z" itemprop="datePublished">2018-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      USRP以及FPGA初识
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>由于这两天正好在学习labview，然后看到了各种各样的USRP以及FPGA，一头雾水（虽然我不应该一头雾水）之下赶快来补了一下知识。当然，这篇并不是一篇专业的帖子，我仅仅只会学习到我认为足够用于我的实验的水平即可。也许随着实验的深入，要求的知识越多，我也会继续更新。Anyway，既然是初识，那么主要内容就是在一分钟内搞明白到底什么是USRP以及FPGA。</p>
+<h1 id="FPGA"><a href="#FPGA" class="headerlink" title="FPGA"></a>FPGA</h1><p>FPGA 全称叫做（Field Programmable Gate Array），说白了就是通过设置各类门来控制最终的电路，从而达到了可编程的目的。毕竟软件中的语言就是硬件中的1/0也就是电路中的电流不断的去触发不同的模块（我这么说足以看得出我的ee基础有多差了。。）。</p>
+<p>anyway，简单的说，FPGA就是一个进行了一系列操作的小电路板，你丢入input，它进行处理并且给我们一个output。</p>
+<h1 id="USRP"><a href="#USRP" class="headerlink" title="USRP"></a>USRP</h1><p>USRP是通用软件无线电外设。所以它就是电脑的外设之一，类似于鼠标键盘。只不过它的功能是，允许我们的电脑收发无线电。从专业的角度来说，它充当了一个无线电通讯系统的数字系带和中频部分（这段话我看不懂，不过我知道了它补齐了我们电脑无法完成无线电通讯的模块）。</p>
+<p>因此它就是一个数据的收发器！某些情况下我们不想去build一个完整的无线电通讯系统，于是我们用USRP以及电脑组成了一个简陋的无线电通讯系统。</p>
+<h1 id="labview中它们的关系"><a href="#labview中它们的关系" class="headerlink" title="labview中它们的关系"></a>labview中它们的关系</h1><p>我无法描述FPGA或者USRP它们本身所用的方式，于是我只能描述它们在labview中的关系。labview本身就是一个大型的虚拟仪器仿真系统，于是我们通过labview编程将很多的FPGA模块连接起来（不同的FPGA也许对应了不同的数据处理），然后将其结果推送给USRP，USRP将数据进行无线传输。当然，反之亦然，USRP接收到的数据也会在labview中进行处理。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/08/USRP以及FPGA初识/" data-id="cjc6pxcas0000he9moq40iauu" class="article-share-link">Compartir</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/01/08/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nuevo</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/01/04/第一篇文章：mac-El-Capitan环境安装ns2-2-35/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Viejo</strong>
+      <div class="article-nav-title">第一篇文章：mac El Capitan环境安装ns2-2.35</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archivos</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Posts recientes</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/08/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/08/USRP以及FPGA初识/">USRP以及FPGA初识</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/04/第一篇文章：mac-El-Capitan环境安装ns2-2-35/">第一篇文章：mac El Capitan环境安装ns2-2.35</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

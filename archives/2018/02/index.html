@@ -118,7 +118,7 @@
 
 
 
-  <title>第一篇文章：mac El Capitan环境安装ns2-2.35 | Hexo</title>
+  <title>Archive | Hexo</title>
   
 
 
@@ -137,7 +137,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,170 +219,74 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        Um..! 4 posts in total. Keep on posting.
+      </span>
 
-  
-  
-  
+      
 
-  
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/04/第一篇文章：mac-El-Capitan环境安装ns2-2-35/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">第一篇文章：mac El Capitan环境安装ns2-2.35</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/02/02/Convex-Optimation-学习/" itemprop="url">
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span itemprop="name">Untitled</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-04T11:52:52-06:00">2018-01-04</time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-02-02T21:28:39-06:00"
+              content="2018-02-02" >
+          02-02
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/01/04/第一篇文章：mac-El-Capitan环境安装ns2-2-35/" class="leancloud_visitors" data-flag-title="第一篇文章：mac El Capitan环境安装ns2-2.35">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <hr>
-<p>认认真真的记录一波如何安装了ns2.问题的难点在于，虽然有很多帖子，但是尝试了很多也并不是都可以实现，其中有版本的原因，也有大家的mac也有不同的设置的问题。尝试了多次以后，也摸索出了一套自己的解决方案，记录一下用于指不定以后什么时候又要遇到，或者也可以somehow变成一个reference。。。基本上我参考了很多帖子，最重要的一个帖子就是<a href="https://myns2work.blogspot.com/2013/08/installing-ns-235-on-mountain-lion-and.html" target="_blank" rel="noopener">这篇</a>，我基本上就是在翻译这篇帖子了。。。另外的目的就是试一下如何上传第一篇blog</p>
-<h1 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h1><hr>
-<p>其实大家的mac的主要步骤是差不多的～</p>
-<h2 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h2><p>下载ns2的最新版本～直至今日，目前的最新版本是ns-2.35：<a href="http://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz/download" target="_blank" rel="noopener">下载地址</a></p>
-<h2 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h2><p>需要各类经典的mac的command line tools之类的，抱歉其实我当年一股脑安装的，其实我分不清楚并且也记不起来了，但是我又用到的就是brew感觉。</p>
-<h2 id="step-3"><a href="#step-3" class="headerlink" title="step 3"></a>step 3</h2><p>然后就是能够看到实际ns2必备的小软件（其实我并不知道是什么软件）－－ XQuartz。</p>
-<h2 id="step-4"><a href="#step-4" class="headerlink" title="step 4"></a>step 4</h2><p>将下载下来的ns2压缩包放在一个文件夹下（这个很重要，因为mac上最麻烦的几个步骤之一就是要设定路径之类的，一个好的文件夹可以事半功倍～），然后解压缩，command line:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf ns-allinone-2.35.tar.gz</span><br></pre></td></tr></table></figure></p>
-<h2 id="step-5"><a href="#step-5" class="headerlink" title="step 5"></a>step 5</h2><p>进入解压缩后的ns2所在的文件夹， 也就是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ns-allinone-2.35</span><br></pre></td></tr></table></figure></p>
-<h2 id="step-6"><a href="#step-6" class="headerlink" title="step 6"></a>step 6</h2><p>下载一个神奇的补丁： <a href="https://github.com/aemreunal/ns-allinone-2.35-Mac-OS-10.9-install-patch" target="_blank" rel="noopener">下载地址</a>。这个补丁其实很多大佬们都build了各自的补丁，比如说贴吧中的一位大佬也有一个补丁。这些补丁的作用基本就是修改了下载下的ns2包中的config以及乱七八糟的一些文件，从而可以在mac环境下运行，反正我不太懂他们干了什么。。。orz。。。我推荐的这个补丁是我唯一运行成功的，并无什么性能的原因</p>
-<h2 id="step-7"><a href="#step-7" class="headerlink" title="step 7"></a>step 7</h2><p>将这个补丁下载后放入到解压缩后的ns2的文件夹，然后运行<code>./install64</code>不同的补丁会有不同的运行命令，这些只是这些大佬们自己制作的。运行完以后，会得到几行非常重要的路径，注意不要关闭，马上又重要作用.</p>
-<h2 id="step-8"><a href="#step-8" class="headerlink" title="step 8"></a>step 8</h2><p>接下来要在mac的<code>user/home</code>路径下寻找一个叫做<br><code>.bash_profile</code>的文件，如果没有的话，需要通过<code>touch ~/.bash_profile</code>创建一个新的，然后开始写入刚刚保存下来的路径.</p>
-<ol>
-<li>path–写入<code>export PATH=$PATH:path1:path2:path3</code>.</li>
-<li>LD LIBRARY–写入<code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:path1:path2</code>.</li>
-<li>TCL Library–写入<br><code>export TCL_LIBRARY=$TCL_LIBRARY:path</code>.</li>
-</ol>
-<h2 id="step-9"><a href="#step-9" class="headerlink" title="step 9"></a>step 9</h2><p>我没有对这些路径进行截图，不过补丁运行完以后的屏幕会很明显。<br>然后运行<code>source ~/.bash_profile</code>。 紧接着运行<code>nam</code>来见证奇迹的发生。</p>
-<h2 id="step-10-optional"><a href="#step-10-optional" class="headerlink" title="step 10 (optional)"></a>step 10 (optional)</h2><p>注意，运行后不仅仅是有ns2的simulator跳出来，而且在command line窗口中也应该有信息出现。否则的话就是失败哦～因为我就是有窗口弹出，但其实并没有成功～原因就是！！<strong>我之前安装了zsh，而刚刚要求修改的<code>.bash_profile</code>文件是属于bash的！他们是不同的shell！！因此，我需要把command line窗口修改为运行bash shell后就成功啦～</strong></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/08/USRP以及FPGA初识/" rel="prev" title="USRP以及FPGA初识">
-                USRP以及FPGA初识 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
+
     </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -390,10 +294,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -414,17 +314,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -466,22 +357,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#主要步骤"><span class="nav-number">1.</span> <span class="nav-text">主要步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#step-1"><span class="nav-number">1.1.</span> <span class="nav-text">step 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-2"><span class="nav-number">1.2.</span> <span class="nav-text">step 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-3"><span class="nav-number">1.3.</span> <span class="nav-text">step 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-4"><span class="nav-number">1.4.</span> <span class="nav-text">step 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-5"><span class="nav-number">1.5.</span> <span class="nav-text">step 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-6"><span class="nav-number">1.6.</span> <span class="nav-text">step 6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-7"><span class="nav-number">1.7.</span> <span class="nav-text">step 7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-8"><span class="nav-number">1.8.</span> <span class="nav-text">step 8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-9"><span class="nav-number">1.9.</span> <span class="nav-text">step 9</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-10-optional"><span class="nav-number">1.10.</span> <span class="nav-text">step 10 (optional)</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -608,10 +483,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
-
-
 
   
 

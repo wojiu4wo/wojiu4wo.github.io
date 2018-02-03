@@ -75,12 +75,16 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="title: Convex Optimation 学习date: 2018-02-02 21:28:39 tags:  这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/02/02/Convex-Optimation-学习/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: Convex Optimation 学习date: 2018-02-02 21:28:39 tags:  这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不">
+<meta property="og:updated_time" content="2018-02-03T05:31:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: Convex Optimation 学习date: 2018-02-02 21:28:39 tags:  这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不">
 
 
 
@@ -112,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/02/Convex-Optimation-学习/"/>
 
 
 
@@ -180,7 +184,7 @@
             
 
             
-              Home
+              Startseite
             
 
           </a>
@@ -194,7 +198,7 @@
             
 
             
-              Archives
+              Archiv
             
 
           </a>
@@ -262,7 +266,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-02T21:28:39-06:00">2018-02-02</time>
             
@@ -311,8 +315,11 @@
       
 
       
-        <h2 id=""><a href="#" class="headerlink" title=""></a><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></h2><p>title: Convex Optimation 学习<br>date: 2018-02-02 21:28:39</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。</p>
+        <hr>
+<p>title: Convex Optimation 学习<br>date: 2018-02-02 21:28:39</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p>这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。</p>
 <h1 id="凸－－定义与差别"><a href="#凸－－定义与差别" class="headerlink" title="凸－－定义与差别"></a>凸－－定义与差别</h1><p>曾经在这一块挣扎了一下，混淆于convex function 与 convex set：</p>
 <ul>
 <li><p><strong>convex function：</strong> 对于所有的\(x, y \in R^n\), 以及所有的\(\alpha, \beta \in R\) 并满足\(\alpha + \beta =  \alpha \geq 0, \beta \geq 0\), 满足 \(f_i(\alpha x+ \beta y)\leq\alpha f_i(x)+\beta f_i(y)\) </p>
@@ -408,10 +415,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -432,7 +439,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -468,7 +475,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">2.</span> <span class="nav-text">tags:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#凸－－定义与差别"><span class="nav-number"></span> <span class="nav-text">凸－－定义与差别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超平面的几何理解"><span class="nav-number"></span> <span class="nav-text">超平面的几何理解</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#凸－－定义与差别"><span class="nav-number"></span> <span class="nav-text">凸－－定义与差别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超平面的几何理解"><span class="nav-number"></span> <span class="nav-text">超平面的几何理解</span></a></div>
             
 
           </div>
@@ -500,7 +507,7 @@
 </div>
 <!--
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 

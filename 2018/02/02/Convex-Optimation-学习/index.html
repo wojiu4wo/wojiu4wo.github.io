@@ -75,16 +75,16 @@
 
 
 
-<meta name="description" content="这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function 与 co">
+<meta name="description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
 <meta property="og:type" content="article">
-<meta property="og:title" content="convex optimation 凸优化学习">
+<meta property="og:title" content="convex optimization 凸优化学习">
 <meta property="og:url" content="http://yoursite.com/2018/02/02/Convex-Optimation-学习/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function 与 co">
-<meta property="og:updated_time" content="2018-02-03T18:54:14.000Z">
+<meta property="og:description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
+<meta property="og:updated_time" content="2018-02-03T20:13:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="convex optimation 凸优化学习">
-<meta name="twitter:description" content="这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function 与 co">
+<meta name="twitter:title" content="convex optimization 凸优化学习">
+<meta name="twitter:description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <title>convex optimation 凸优化学习 | Hexo</title>
+  <title>convex optimization 凸优化学习 | Hexo</title>
   
 
 
@@ -256,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">convex optimation 凸优化学习</h1>
+          <h1 class="post-title" itemprop="name headline">convex optimization 凸优化学习</h1>
         
 
         <div class="post-meta">
@@ -284,7 +284,7 @@
 
           
           
-             <span id="/2018/02/02/Convex-Optimation-学习/" class="leancloud_visitors" data-flag-title="convex optimation 凸优化学习">
+             <span id="/2018/02/02/Convex-Optimation-学习/" class="leancloud_visitors" data-flag-title="convex optimization 凸优化学习">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -318,7 +318,7 @@
         <hr>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-<p>这个学期选了convex optimation这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimation 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。</p>
+<p>这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。</p>
 <h1 id="凸－－定义与差别"><a href="#凸－－定义与差别" class="headerlink" title="凸－－定义与差别"></a>凸－－定义与差别</h1><p>曾经在这一块挣扎了一下，混淆于convex function 与 convex set：</p>
 <ul>
 <li><p><strong>convex function：</strong> 对于所有的\(x, y \in R^n\), 以及所有的\(\alpha, \beta \in R\) 并满足\(\alpha + \beta =  \alpha \geq 0, \beta \geq 0\), 满足 \(f_i(\alpha x+ \beta y)\leq\alpha f_i(x)+\beta f_i(y)\) </p>

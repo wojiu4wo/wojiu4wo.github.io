@@ -122,7 +122,7 @@
 
 
 
-  <title>convex optimization 凸优化学习 | Hexo</title>
+  <title>kraken交易须知 | Hexo</title>
   
 
 
@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Convex-Optimation-学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/09/kraken交易须知/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -256,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">convex optimization 凸优化学习</h1>
+          <h1 class="post-title" itemprop="name headline">kraken交易须知</h1>
         
 
         <div class="post-meta">
@@ -268,7 +268,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-02T21:28:39-06:00">2018-02-02</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-09T18:35:45-06:00">2018-02-09</time>
             
 
             
@@ -284,7 +284,7 @@
 
           
           
-             <span id="/2018/02/02/Convex-Optimation-学习/" class="leancloud_visitors" data-flag-title="convex optimization 凸优化学习">
+             <span id="/2018/02/09/kraken交易须知/" class="leancloud_visitors" data-flag-title="kraken交易须知">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -315,19 +315,16 @@
       
 
       
-        <hr>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<p>这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。</p>
-<h1 id="凸－－定义与差别"><a href="#凸－－定义与差别" class="headerlink" title="凸－－定义与差别"></a>凸－－定义与差别</h1><p>曾经在这一块挣扎了一下，混淆于convex function 与 convex set：</p>
+        <h1 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h1><h2 id="交易对："><a href="#交易对：" class="headerlink" title="交易对："></a>交易对：</h2><h2 id="仓（position）："><a href="#仓（position）：" class="headerlink" title="仓（position）："></a>仓（position）：</h2><p>简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。 </p>
+<h2 id="多头（long-position）："><a href="#多头（long-position）：" class="headerlink" title="多头（long position）："></a>多头（long position）：</h2><p>经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。</p>
+<h2 id="空头（short-position）："><a href="#空头（short-position）：" class="headerlink" title="空头（short position）："></a>空头（short position）：</h2><p>本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价值，从而获得差价。</p>
 <ul>
-<li><p><strong>convex function：</strong> 对于所有的\(x, y \in R^n\), 以及所有的\(\alpha, \beta \in R\) 并满足\(\alpha + \beta =  \alpha \geq 0, \beta \geq 0\), 满足 \(f_i(\alpha x+ \beta y)\leq\alpha f_i(x)+\beta f_i(y)\) </p>
-</li>
-<li><p><strong>convex set:</strong>  满足在集合内的任意两点组成的线段依然在集合内的这个集合</p>
-</li>
-<li><strong>relation:</strong> 通过epigraph可以使得凸函数与凸集相联系，凸函数以上的空间即是凸集，反之不成立。</li>
+<li>比如说，我估计btc要贬值，现在的价格是5000刀一个，于是我借来了一个btc的交易对（5000刀一个btc），然后卖出去换成5000刀，那我欠kraken一个btc。然后btc贬值以后（4000刀一个btc），我以4000刀买入一个btc，并且还清了欠的一个btc，自己赚了1000刀。<h2 id="现有资产（equity）："><a href="#现有资产（equity）：" class="headerlink" title="现有资产（equity）："></a>现有资产（equity）：</h2>也就是我们的本金加上我们目前交易对中的利润或者减去我们亏了的钱。<h2 id="初始保证金（initial-margin）："><a href="#初始保证金（initial-margin）：" class="headerlink" title="初始保证金（initial margin）："></a>初始保证金（initial margin）：</h2>运用杠杆去借交易对的时候需要支付的保证金。其中会要求维持保证金(maintenance margin)在整个杠杆过程中不能低于某个limit，否则将会面临当前交易对价值的清洗，这是kraken用于保护自己的资产没被我们亏完的方式。</li>
+<li>比如说，我有5000刀，用2000的保证金进行了1:5的杠杆借贷（所以就是手上拿到10000刀了）。然后<h2 id="margin-level："><a href="#margin-level：" class="headerlink" title="margin level："></a>margin level：</h2>现有资产（equity）与我已经给的保证金（used margin）之比不能低于1，否则会被系统进行处理。因为当margin level为1的时候说明我已经无法交出更多的保证金了，低于1的时候说明我还不上kraken借给我的资产了。其中，低于0.8的时候，系统会自动把我的资产卖出去来提高这个margin level，如果低于0.4，则我的仓会被清洗。通过充更多的钱可以提高margin level。<h2 id="维持保证金（maintenance-margin）："><a href="#维持保证金（maintenance-margin）：" class="headerlink" title="维持保证金（maintenance margin）："></a>维持保证金（maintenance margin）：</h2>上述所说适用于保证我们的margin level的资金，具体的说在kraken，这个maintenance margin就是我们的现有资产（equity）。唯有通过增加现有资产，才能维持margin level的健康。<h2 id="平仓（closing-position）："><a href="#平仓（closing-position）：" class="headerlink" title="平仓（closing position）："></a>平仓（closing position）：</h2>对于已经持有的仓，进行一波相反的持仓，从而达到结清目前仓位的举动。* 第一个例子：对于我现有的仓位属于多头（long position），意味着我借了kraken的钱并且买入了一些币，所以我现在持有的是币，如果我要平仓，我就把币卖给其他人，得到钱并且还上这些钱。 </li>
+<li>第二个例子：对于我现有的仓位属于空头（short position），意味着我借了kraken的一些币并且将其卖出的到了钱，所以我现在持有的是美元，如果我要平仓，那我就要去买入一些别人的币，从而得到币并将其还给kraken。这也就是为什么在平仓行为中不需要采用与开仓行为同样的杠杆，无论如何，只要自己还的上欠的东西就好了。当然，这里要注意杠杆的选择以防止出现逆仓行为<h2 id="逆仓（flipping-position）："><a href="#逆仓（flipping-position）：" class="headerlink" title="逆仓（flipping position）："></a>逆仓（flipping position）：</h2>从当前持有的仓位变成另一种仓位。</li>
+<li>比如说从long到short，也就是说我当前借了钱买了币，手中持有一个btc，然后我从kraken手中进行short position操作，借2个币，那我最后的仓位就是short position中借了一个币换成了手中持有的美元，值得注意的是，我最后的杠杆并不是一开始long position时的杠杆，因为我既然把这个币还清了，所以我最后的杠杆是我在short position中的杠杆.</li>
+<li>在比如说从short到long， 也就是说我借了一个btc卖了之后换了钱（3000刀），然后我从kraken手中进行long position操作，借足够的钱（4000刀），换成了1.5个btc，然后将其中1个btc还给kraken，目前我持有的就是0.5个btc。所以我就是long position with 0.5 btc。 当下的杠杆是我进行最后操作的杠杆。<h1 id="kraken交易注意事项"><a href="#kraken交易注意事项" class="headerlink" title="kraken交易注意事项"></a>kraken交易注意事项</h1><h2 id="手续费"><a href="#手续费" class="headerlink" title="手续费"></a>手续费</h2><img src="/Users/daojingguo/Documents/Github_Blog/图片/btc杠杆手续费.jpeg" alt="btc杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eos杠杆手续费.jpeg" alt="eos杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eth杠杆手续费.jpeg" alt="eth杠杆手续费"></li>
 </ul>
-<h1 id="超平面的几何理解"><a href="#超平面的几何理解" class="headerlink" title="超平面的几何理解"></a>超平面的几何理解</h1><p>非常理解超平面是降维空间，也就是说\(R^n\)空间内的超平面会是\(n-1\)维的。一维和二位空间的超平面是点（也就是一维），三维空间的超平面是线（也就是二维）。但是超维空间还是难以勾画出来，特别是多维空间的不可视觉化，于是终于找到了这篇文章： <a href="https://medium.com/@ChunYeung/深度學習-超平面-hyperplane-bf05940bb3fd" target="_blank" rel="noopener">深度学习：超平面</a> </p>
 
       
     </div>
@@ -352,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/02/De Morgan`s Law (德摩根定律)/" rel="next" title="De Morgan`s Law (德摩根定律)">
-                <i class="fa fa-chevron-left"></i> De Morgan`s Law (德摩根定律)
+              <a href="/2018/02/02/Convex-Optimation-学习/" rel="next" title="convex optimization 凸优化学习">
+                <i class="fa fa-chevron-left"></i> convex optimization 凸优化学习
               </a>
             
           </div>
@@ -361,10 +358,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/09/kraken交易须知/" rel="prev" title="kraken交易须知">
-                kraken交易须知 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -478,7 +471,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#凸－－定义与差别"><span class="nav-number">1.</span> <span class="nav-text">凸－－定义与差别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超平面的几何理解"><span class="nav-number">2.</span> <span class="nav-text">超平面的几何理解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关键词"><span class="nav-number">1.</span> <span class="nav-text">关键词</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#交易对："><span class="nav-number">1.1.</span> <span class="nav-text">交易对：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仓（position）："><span class="nav-number">1.2.</span> <span class="nav-text">仓（position）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多头（long-position）："><span class="nav-number">1.3.</span> <span class="nav-text">多头（long position）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空头（short-position）："><span class="nav-number">1.4.</span> <span class="nav-text">空头（short position）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现有资产（equity）："><span class="nav-number">1.5.</span> <span class="nav-text">现有资产（equity）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始保证金（initial-margin）："><span class="nav-number">1.6.</span> <span class="nav-text">初始保证金（initial margin）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#margin-level："><span class="nav-number">1.7.</span> <span class="nav-text">margin level：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#维持保证金（maintenance-margin）："><span class="nav-number">1.8.</span> <span class="nav-text">维持保证金（maintenance margin）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平仓（closing-position）："><span class="nav-number">1.9.</span> <span class="nav-text">平仓（closing position）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逆仓（flipping-position）："><span class="nav-number">1.10.</span> <span class="nav-text">逆仓（flipping position）：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#kraken交易注意事项"><span class="nav-number">2.</span> <span class="nav-text">kraken交易注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#手续费"><span class="nav-number">2.1.</span> <span class="nav-text">手续费</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -75,16 +75,20 @@
 
 
 
-<meta name="description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
+<meta name="description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
 <meta property="og:type" content="article">
-<meta property="og:title" content="convex optimization 凸优化学习">
-<meta property="og:url" content="http://yoursite.com/2018/02/02/Convex-Optimation-学习/index.html">
+<meta property="og:title" content="kraken交易须知">
+<meta property="og:url" content="http://yoursite.com/2018/02/09/kraken交易须知/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
-<meta property="og:updated_time" content="2018-02-03T20:13:38.000Z">
+<meta property="og:description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
+<meta property="og:image" content="http://yoursite.com/Users/daojingguo/Documents/Github_Blog/图片/btc杠杆手续费.jpeg">
+<meta property="og:image" content="http://yoursite.com/Users/daojingguo/Documents/Github_Blog/图片/eos杠杆手续费.jpeg">
+<meta property="og:image" content="http://yoursite.com/Users/daojingguo/Documents/Github_Blog/图片/eth杠杆手续费.jpeg">
+<meta property="og:updated_time" content="2018-02-10T02:36:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="convex optimization 凸优化学习">
-<meta name="twitter:description" content="这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新，根据自己所学知识。 凸－－定义与差别曾经在这一块挣扎了一下，混淆于convex function">
+<meta name="twitter:title" content="kraken交易须知">
+<meta name="twitter:description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
+<meta name="twitter:image" content="http://yoursite.com/Users/daojingguo/Documents/Github_Blog/图片/btc杠杆手续费.jpeg">
 
 
 
@@ -116,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/02/Convex-Optimation-学习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/09/kraken交易须知/"/>
 
 
 
@@ -319,12 +323,30 @@
 <h2 id="多头（long-position）："><a href="#多头（long-position）：" class="headerlink" title="多头（long position）："></a>多头（long position）：</h2><p>经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。</p>
 <h2 id="空头（short-position）："><a href="#空头（short-position）：" class="headerlink" title="空头（short position）："></a>空头（short position）：</h2><p>本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价值，从而获得差价。</p>
 <ul>
-<li>比如说，我估计btc要贬值，现在的价格是5000刀一个，于是我借来了一个btc的交易对（5000刀一个btc），然后卖出去换成5000刀，那我欠kraken一个btc。然后btc贬值以后（4000刀一个btc），我以4000刀买入一个btc，并且还清了欠的一个btc，自己赚了1000刀。<h2 id="现有资产（equity）："><a href="#现有资产（equity）：" class="headerlink" title="现有资产（equity）："></a>现有资产（equity）：</h2>也就是我们的本金加上我们目前交易对中的利润或者减去我们亏了的钱。<h2 id="初始保证金（initial-margin）："><a href="#初始保证金（initial-margin）：" class="headerlink" title="初始保证金（initial margin）："></a>初始保证金（initial margin）：</h2>运用杠杆去借交易对的时候需要支付的保证金。其中会要求维持保证金(maintenance margin)在整个杠杆过程中不能低于某个limit，否则将会面临当前交易对价值的清洗，这是kraken用于保护自己的资产没被我们亏完的方式。</li>
-<li>比如说，我有5000刀，用2000的保证金进行了1:5的杠杆借贷（所以就是手上拿到10000刀了）。然后<h2 id="margin-level："><a href="#margin-level：" class="headerlink" title="margin level："></a>margin level：</h2>现有资产（equity）与我已经给的保证金（used margin）之比不能低于1，否则会被系统进行处理。因为当margin level为1的时候说明我已经无法交出更多的保证金了，低于1的时候说明我还不上kraken借给我的资产了。其中，低于0.8的时候，系统会自动把我的资产卖出去来提高这个margin level，如果低于0.4，则我的仓会被清洗。通过充更多的钱可以提高margin level。<h2 id="维持保证金（maintenance-margin）："><a href="#维持保证金（maintenance-margin）：" class="headerlink" title="维持保证金（maintenance margin）："></a>维持保证金（maintenance margin）：</h2>上述所说适用于保证我们的margin level的资金，具体的说在kraken，这个maintenance margin就是我们的现有资产（equity）。唯有通过增加现有资产，才能维持margin level的健康。<h2 id="平仓（closing-position）："><a href="#平仓（closing-position）：" class="headerlink" title="平仓（closing position）："></a>平仓（closing position）：</h2>对于已经持有的仓，进行一波相反的持仓，从而达到结清目前仓位的举动。* 第一个例子：对于我现有的仓位属于多头（long position），意味着我借了kraken的钱并且买入了一些币，所以我现在持有的是币，如果我要平仓，我就把币卖给其他人，得到钱并且还上这些钱。 </li>
-<li>第二个例子：对于我现有的仓位属于空头（short position），意味着我借了kraken的一些币并且将其卖出的到了钱，所以我现在持有的是美元，如果我要平仓，那我就要去买入一些别人的币，从而得到币并将其还给kraken。这也就是为什么在平仓行为中不需要采用与开仓行为同样的杠杆，无论如何，只要自己还的上欠的东西就好了。当然，这里要注意杠杆的选择以防止出现逆仓行为<h2 id="逆仓（flipping-position）："><a href="#逆仓（flipping-position）：" class="headerlink" title="逆仓（flipping position）："></a>逆仓（flipping position）：</h2>从当前持有的仓位变成另一种仓位。</li>
-<li>比如说从long到short，也就是说我当前借了钱买了币，手中持有一个btc，然后我从kraken手中进行short position操作，借2个币，那我最后的仓位就是short position中借了一个币换成了手中持有的美元，值得注意的是，我最后的杠杆并不是一开始long position时的杠杆，因为我既然把这个币还清了，所以我最后的杠杆是我在short position中的杠杆.</li>
-<li>在比如说从short到long， 也就是说我借了一个btc卖了之后换了钱（3000刀），然后我从kraken手中进行long position操作，借足够的钱（4000刀），换成了1.5个btc，然后将其中1个btc还给kraken，目前我持有的就是0.5个btc。所以我就是long position with 0.5 btc。 当下的杠杆是我进行最后操作的杠杆。<h1 id="kraken交易注意事项"><a href="#kraken交易注意事项" class="headerlink" title="kraken交易注意事项"></a>kraken交易注意事项</h1><h2 id="手续费"><a href="#手续费" class="headerlink" title="手续费"></a>手续费</h2><img src="/Users/daojingguo/Documents/Github_Blog/图片/btc杠杆手续费.jpeg" alt="btc杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eos杠杆手续费.jpeg" alt="eos杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eth杠杆手续费.jpeg" alt="eth杠杆手续费"></li>
+<li>比如说，我估计btc要贬值，现在的价格是5000刀一个，于是我借来了一个btc的交易对（5000刀一个btc），然后卖出去换成5000刀，那我欠kraken一个btc。然后btc贬值以后（4000刀一个btc），我以4000刀买入一个btc，并且还清了欠的一个btc，自己赚了1000刀。</li>
 </ul>
+<h2 id="现有资产（equity）："><a href="#现有资产（equity）：" class="headerlink" title="现有资产（equity）："></a>现有资产（equity）：</h2><p>也就是我们的本金加上我们目前交易对中的利润或者减去我们亏了的钱。</p>
+<h2 id="初始保证金（initial-margin）："><a href="#初始保证金（initial-margin）：" class="headerlink" title="初始保证金（initial margin）："></a>初始保证金（initial margin）：</h2><p>运用杠杆去借交易对的时候需要支付的保证金。其中会要求维持保证金(maintenance margin)在整个杠杆过程中不能低于某个limit，否则将会面临当前交易对价值的清洗，这是kraken用于保护自己的资产没被我们亏完的方式。</p>
+<ul>
+<li>比如说，我有5000刀，用2000的保证金进行了1:5的杠杆借贷（所以就是手上拿到10000刀了）。然后</li>
+</ul>
+<h2 id="margin-level："><a href="#margin-level：" class="headerlink" title="margin level："></a>margin level：</h2><p>现有资产（equity）与我已经给的保证金（used margin）之比不能低于1，否则会被系统进行处理。因为当margin level为1的时候说明我已经无法交出更多的保证金了，低于1的时候说明我还不上kraken借给我的资产了。其中，低于0.8的时候，系统会自动把我的资产卖出去来提高这个margin level，如果低于0.4，则我的仓会被清洗。通过充更多的钱可以提高margin level。</p>
+<h2 id="维持保证金（maintenance-margin）："><a href="#维持保证金（maintenance-margin）：" class="headerlink" title="维持保证金（maintenance margin）："></a>维持保证金（maintenance margin）：</h2><p>上述所说适用于保证我们的margin level的资金，具体的说在kraken，这个maintenance margin就是我们的现有资产（equity）。唯有通过增加现有资产，才能维持margin level的健康。</p>
+<h2 id="平仓（closing-position）："><a href="#平仓（closing-position）：" class="headerlink" title="平仓（closing position）："></a>平仓（closing position）：</h2><p>对于已经持有的仓，进行一波相反的持仓，从而达到结清目前仓位的举动。</p>
+<ul>
+<li><p>第一个例子：对于我现有的仓位属于多头（long position），意味着我借了kraken的钱并且买入了一些币，所以我现在持有的是币，如果我要平仓，我就把币卖给其他人，得到钱并且还上这些钱。 </p>
+</li>
+<li><p>第二个例子：对于我现有的仓位属于空头（short position），意味着我借了kraken的一些币并且将其卖出的到了钱，所以我现在持有的是美元，如果我要平仓，那我就要去买入一些别人的币，从而得到币并将其还给kraken。这也就是为什么在平仓行为中不需要采用与开仓行为同样的杠杆，无论如何，只要自己还的上欠的东西就好了。当然，这里要注意杠杆的选择以防止出现逆仓行为</p>
+</li>
+</ul>
+<h2 id="逆仓（flipping-position）："><a href="#逆仓（flipping-position）：" class="headerlink" title="逆仓（flipping position）："></a>逆仓（flipping position）：</h2><p>从当前持有的仓位变成另一种仓位。</p>
+<ul>
+<li><p>比如说从long到short，也就是说我当前借了钱买了币，手中持有一个btc，然后我从kraken手中进行short position操作，借2个币，那我最后的仓位就是short position中借了一个币换成了手中持有的美元，值得注意的是，我最后的杠杆并不是一开始long position时的杠杆，因为我既然把这个币还清了，所以我最后的杠杆是我在short position中的杠杆.</p>
+</li>
+<li><p>在比如说从short到long， 也就是说我借了一个btc卖了之后换了钱（3000刀），然后我从kraken手中进行long position操作，借足够的钱（4000刀），换成了1.5个btc，然后将其中1个btc还给kraken，目前我持有的就是0.5个btc。所以我就是long position with 0.5 btc。 当下的杠杆是我进行最后操作的杠杆。</p>
+</li>
+</ul>
+<h1 id="kraken交易注意事项"><a href="#kraken交易注意事项" class="headerlink" title="kraken交易注意事项"></a>kraken交易注意事项</h1><h2 id="手续费"><a href="#手续费" class="headerlink" title="手续费"></a>手续费</h2><p><img src="/Users/daojingguo/Documents/Github_Blog/图片/btc杠杆手续费.jpeg" alt="btc杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eos杠杆手续费.jpeg" alt="eos杠杆手续费"><br><img src="/Users/daojingguo/Documents/Github_Blog/图片/eth杠杆手续费.jpeg" alt="eth杠杆手续费"></p>
 
       
     </div>

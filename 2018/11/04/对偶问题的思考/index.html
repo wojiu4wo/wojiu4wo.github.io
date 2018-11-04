@@ -81,7 +81,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/11/04/对偶问题的思考/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：  作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。首先，其实你实际做research能formulate出一个Optimizat">
-<meta property="og:updated_time" content="2018-11-04T21:27:47.160Z">
+<meta property="og:updated_time" content="2018-11-04T21:39:58.047Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对偶问题的思考">
 <meta name="twitter:description" content="对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：  作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。首先，其实你实际做research能formulate出一个Optimizat">
@@ -184,7 +184,7 @@
             
 
             
-              Accueil
+              Startseite
             
 
           </a>
@@ -198,7 +198,7 @@
             
 
             
-              Archives
+              Archiv
             
 
           </a>
@@ -266,7 +266,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-04T11:52:52-06:00">2018-11-04</time>
             
@@ -326,7 +326,11 @@
 <li>对于复杂的问题，有了constraint以及某些feasible region，求导为0的方法无法解决（因为Global minumum不一定在region之内），正如754那门课讲的一样，极值点会出现在边界上。只有interior point为GM才会有极值为0的情况出现。</li>
 <li>复杂问题下的一种特殊情况是，congstraint 为 simplex form，又会得到新的极值点，他们不一定求导为0.他们会在marginal cost均为最低值的时候成立。也许min marginal cost等于0，也许也不等于，但是这个theorem 成立。</li>
 </ul>
-<p>#Primal 与 Dual之间- Lagrangue Dual<br>其实在Primal与Dual之间还有一个problem，就是大家所说的Lagrangue Dual problem，这里面就是常见的加入multiplier，然后进行求解。754这门课已经很清晰的解释了这个过程在干什么～～首先Primal是在求feasible region下的objective function的最低值，那么我们知道对于从西南方向进入的直线来说，一个fixed斜率会得到一个可行域下的min objective value \(g(\alpha)\)，这个就是Lagrangue中给定斜率\(\alpha\)的极值。然后Dual问题就是求所有的\(\alpha\)中谁可以得到最大的\(g(\alpha)\)。<br>继续学习～继续探索</p>
+<h1 id="Primal-与-Dual之间-Lagrangue-Dual"><a href="#Primal-与-Dual之间-Lagrangue-Dual" class="headerlink" title="Primal 与 Dual之间- Lagrangue Dual"></a>Primal 与 Dual之间- Lagrangue Dual</h1><p>其实在Primal与Dual之间还有一个problem，就是大家所说的Lagrangue Dual problem，这里面就是常见的加入multiplier，然后进行求解。754这门课已经很清晰的解释了这个过程在干什么～～首先Primal是在求feasible region下的objective function的最低值，那么我们知道对于从西南方向进入的直线来说，一个fixed斜率会得到一个可行域下的min objective value \(g(\alpha)\)，这个就是Lagrangue中给定斜率\(\alpha\)的极值。然后Dual问题就是求所有的\(\alpha\)中谁可以得到最大的\(g(\alpha)\)。<br>因此</p>
+<ul>
+<li>即使初始问题为non-convex，Lagrangue Dual 问题为convex，因为他是关于\(\alpha\)的线形组合。</li>
+<li>primal问题中的\(\alpha\)为乘子，然实在Lgrangue Dual问题中为变量。<br>继续学习～继续探索</li>
+</ul>
 
       
     </div>
@@ -413,10 +417,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table Des Matières
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Ensemble
+            Übersicht
           </li>
         </ul>
       
@@ -437,7 +441,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">10</span>
-                    <span class="site-state-item-name">articles</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -473,7 +477,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#对偶问题的intuition"><span class="nav-number">1.</span> <span class="nav-text">对偶问题的intuition</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#对偶问题的intuition"><span class="nav-number">1.</span> <span class="nav-text">对偶问题的intuition</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Primal-与-Dual之间-Lagrangue-Dual"><span class="nav-number">2.</span> <span class="nav-text">Primal 与 Dual之间- Lagrangue Dual</span></a></li></ol></div>
             
 
           </div>
@@ -505,7 +509,7 @@
 </div>
 <!--
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -514,7 +518,7 @@
 
 
 
-  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.0</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.0</div>
 -->
 
 

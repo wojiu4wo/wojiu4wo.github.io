@@ -75,20 +75,16 @@
 
 
 
-<meta name="description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
+<meta name="description" content="对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：  作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。首先，其实你实际做research能formulate出一个Optimizat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="kraken交易须知">
-<meta property="og:url" content="http://yoursite.com/2018/02/09/kraken交易须知/index.html">
+<meta property="og:title" content="对偶问题的思考">
+<meta property="og:url" content="http://yoursite.com/2018/11/04/对偶问题的思考/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
-<meta property="og:image" content="https://cl.ly/3S2n381l1Z2d/btc%E6%9D%A0%E6%9D%86%E6%89%8B%E7%BB%AD%E8%B4%B9.jpeg">
-<meta property="og:image" content="https://cl.ly/3o2f0Y20282r/eos%E6%9D%A0%E6%9D%86%E6%89%8B%E7%BB%AD%E8%B4%B9.jpeg">
-<meta property="og:image" content="https://cl.ly/3N1r2q2w0z25/eth%E6%9D%A0%E6%9D%86%E6%89%8B%E7%BB%AD%E8%B4%B9.jpeg">
-<meta property="og:updated_time" content="2018-02-10T02:48:39.000Z">
+<meta property="og:description" content="对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：  作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。首先，其实你实际做research能formulate出一个Optimizat">
+<meta property="og:updated_time" content="2018-11-04T21:27:47.160Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kraken交易须知">
-<meta name="twitter:description" content="关键词交易对：仓（position）：简单的来说就是我进行交易行为后手中的资产，注意不是指我的本金，而是虚拟币。  多头（long position）：经典的借了kraken的钱，然后买入当前交易对，然后交易对升值以后再卖出去， 也就是说高抛低吸。 空头（short position）：本人在不持有证券（在币圈也就是一个交易对）时，向kraken借了一些证券，然后高价卖出去，并还清借来的证券对应价">
-<meta name="twitter:image" content="https://cl.ly/3S2n381l1Z2d/btc%E6%9D%A0%E6%9D%86%E6%89%8B%E7%BB%AD%E8%B4%B9.jpeg">
+<meta name="twitter:title" content="对偶问题的思考">
+<meta name="twitter:description" content="对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：  作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。首先，其实你实际做research能formulate出一个Optimizat">
 
 
 
@@ -120,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/09/kraken交易须知/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/04/对偶问题的思考/"/>
 
 
 
@@ -189,7 +185,7 @@
             
 
             
-              Home
+              Startseite
             
 
           </a>
@@ -203,7 +199,7 @@
             
 
             
-              Archives
+              Archiv
             
 
           </a>
@@ -228,6 +224,706 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/04/对偶问题的思考/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/04/对偶问题的思考/" itemprop="url">对偶问题的思考</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-04T11:52:52-06:00">2018-11-04</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/11/04/对偶问题的思考/" class="leancloud_visitors" data-flag-title="对偶问题的思考">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+对偶问题的intuition从知乎上的 JohnnyLee的回答非常有感触，提供了一些hint：
+
+作者：JohnnyLee链接：https://www.zhihu.com/question/43830699/answer/129887370来源：知乎著作权归作者所有。商业转载请联系作者获得授权，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/04/对偶问题的思考/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/21/华为手机体验系列-黑阙/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/21/华为手机体验系列-黑阙/" itemprop="url">Unbenannt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-21T13:01:57-05:00">2018-07-21</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/21/华为手机体验系列-黑阙/" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          这一系列的po问用于自己玩安卓时遇到的问题～～
+黑阙这个算是非常出名的后台控制的软件了，前身好像是”禁止运行“，广受好评可以把很多进程真正的kill 掉从而达到ios的水平。当然实际效果还带验证
+安装从酷安下载并安装，打开黑阙会提示你如何一步一步设置完成。总而言之：
+step1: ADB设置ADB（
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/21/华为手机体验系列-黑阙/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/树的学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/树的学习/" itemprop="url">Unbenannt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T16:38:24-05:00">2018-05-15</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/05/15/树的学习/" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          本文用于自己对于树的学习进行的一些总结，其中包括了各类帖子中的概念以及自己的一些思考。由于比较零碎，所以对于reference就不一一列出了。
+二叉树(binary tree)单纯的就是子节点的数量不超过2的树。因此每一个node最多只有左右子节点，且左右子节点的顺序不能改变。
+分类
+满二叉树(fu
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/15/树的学习/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/18/鞅/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/18/鞅/" itemprop="url">Unbenannt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-18T14:22:31-05:00">2018-04-18</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/18/鞅/" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          本文来自于刚刚学习鞅过程，以后也许会继续更新，甚至这篇文章甚至会有漏洞等。不过此文更加注重于初识鞅过程的元认知以及应用场景等，具体推导和性质并未概括。
+鞅一句话概括$E[X_i|F_i] = E[X_i+1|F_i+1]$
+其中F为当前X所处的环境，并且借由这个环境可以计算出X的均值，而X_i就是在
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/18/鞅/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/Lyapunov 函数初识/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/14/Lyapunov 函数初识/" itemprop="url">Unbenannt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-14T14:20:40-05:00">2018-04-14</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/14/Lyapunov 函数初识/" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+Lyapunov 初体验
+L优化是通过L函数进行实现的，主要用于control theory。 
+一个多维state的系统，L函数是这个多维state的scalar。
+L函数的初衷是： 当系统往undesirable的state前进是，其值会越来越大，且增长速度越来越快，因此可以用来很好的判断方向
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/14/Lyapunov 函数初识/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -273,7 +969,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-09T18:35:45-06:00">2018-02-09</time>
             
@@ -331,147 +1027,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/09/kraken交易须知/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Convex-Optimation-学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/Convex-Optimation-学习/" itemprop="url">convex optimization 凸优化学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-02T21:28:39-06:00">2018-02-02</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/02/02/Convex-Optimation-学习/" class="leancloud_visitors" data-flag-title="convex optimization 凸优化学习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-
-
-这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/02/Convex-Optimation-学习/#more" rel="contents">
-              Read more &raquo;
+              Weiterlesen &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -552,7 +1108,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-02T21:28:39-06:00">2018-02-02</time>
             
@@ -608,7 +1164,147 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/02/De Morgan`s Law (德摩根定律)/#more" rel="contents">
-              Read more &raquo;
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Convex-Optimation-学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/02/Convex-Optimation-学习/" itemprop="url">convex optimization 凸优化学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-02T21:28:39-06:00">2018-02-02</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/02/Convex-Optimation-学习/" class="leancloud_visitors" data-flag-title="convex optimization 凸优化学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+
+
+这个学期选了convex optimization这门课，并且这门课也是engineering research中必不可少的优化方法了。于是，用这篇文章来记录自己学习凸优化convex optimization 中所学到的一些知识～希望以后也可以成为一个关键词集结的索引文。这篇文章会不断的更新
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/02/Convex-Optimation-学习/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -689,7 +1385,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T14:09:48-06:00">2018-01-08</time>
             
@@ -745,7 +1441,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/01/08/USRP以及FPGA初识/#more" rel="contents">
-              Read more &raquo;
+              Weiterlesen &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -826,7 +1522,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-04T11:52:52-06:00">2018-01-04</time>
             
@@ -883,7 +1579,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/01/04/第一篇文章：mac-El-Capitan环境安装ns2-2-35/#more" rel="contents">
-              Read more &raquo;
+              Weiterlesen &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -966,8 +1662,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -1019,7 +1715,7 @@
 </div>
 <!--
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
